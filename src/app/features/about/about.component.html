@@ -1,0 +1,52 @@
+<section id="about" class="section section-light">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">Get to know more about my background and expertise</p>
+
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Full Stack Web Developer from Bangalore, India</h3>
+        <p>
+          I'm a dedicated Full Stack Web Developer with <strong>3.7+ years</strong> of hands-on experience
+          in designing, developing, testing, and maintaining enterprise web applications.
+        </p>
+        <p>
+          Currently working at <strong>Brandmuscle India Pvt Ltd</strong>, where I specialize in building
+          modern, scalable solutions using Angular, C#, and .NET Core. My expertise lies in creating
+          intuitive user interfaces, developing robust REST APIs, and optimizing database performance.
+        </p>
+        <p>
+          I'm passionate about writing clean, maintainable code and continuously learning new technologies
+          to improve my craft. I thrive in collaborative Agile environments and enjoy mentoring junior
+          developers to help them grow.
+        </p>
+
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="material-icons">check_circle</span>
+            <span>3.7+ years of professional experience</span>
+          </div>
+          <div class="highlight-item">
+            <span class="material-icons">check_circle</span>
+            <span>Delivered 5 major enterprise projects</span>
+          </div>
+          <div class="highlight-item">
+            <span class="material-icons">check_circle</span>
+            <span>Expert in Agile methodologies</span>
+          </div>
+          <div class="highlight-item">
+            <span class="material-icons">check_circle</span>
+            <span>Mentored junior team members</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div *ngFor="let stat of stats" class="stat-card">
+          <h4 class="stat-value">{{ stat.value }}</h4>
+          <p class="stat-label">{{ stat.label }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
