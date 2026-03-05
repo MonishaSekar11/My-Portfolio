@@ -1,0 +1,225 @@
+// ============================================================================
+// Modern Minimal Theme - Mixins
+// ============================================================================
+
+@import 'variables';
+
+// Responsive Breakpoints
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'xs' {
+    @media (min-width: $breakpoint-xs) { @content; }
+  }
+  @else if $breakpoint == 'sm' {
+    @media (min-width: $breakpoint-sm) { @content; }
+  }
+  @else if $breakpoint == 'md' {
+    @media (min-width: $breakpoint-md) { @content; }
+  }
+  @else if $breakpoint == 'lg' {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+  @else if $breakpoint == 'xl' {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+  @else if $breakpoint == 'xxl' {
+    @media (min-width: $breakpoint-xxl) { @content; }
+  }
+}
+
+// Flexbox Center
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flexbox Column
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Flexbox Between
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Button Base
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  padding: $spacing-sm $spacing-lg;
+  font-family: $font-primary;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: $border-radius-md;
+  transition: all $transition-base;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba($primary-blue, 0.25);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+// Primary Button
+@mixin button-primary {
+  @include button-base;
+  color: $white;
+  background-color: $primary-blue;
+  border-color: $primary-blue;
+
+  &:hover:not(:disabled) {
+    background-color: $hover-blue;
+    border-color: $hover-blue;
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: $shadow-sm;
+  }
+}
+
+// Outline Button
+@mixin button-outline {
+  @include button-base;
+  color: $primary-blue;
+  background-color: transparent;
+  border-color: $primary-blue;
+
+  &:hover:not(:disabled) {
+    color: $white;
+    background-color: $primary-blue;
+    border-color: $primary-blue;
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+}
+
+// Card
+@mixin card {
+  background: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  padding: $spacing-xl;
+  transition: all $transition-base;
+
+  &:hover {
+    box-shadow: $shadow-lg;
+    transform: translateY(-4px);
+  }
+}
+
+// Section Padding
+@mixin section-padding {
+  padding: $spacing-3xl $spacing-md;
+
+  @include respond-to('md') {
+    padding: $spacing-4xl $spacing-xl;
+  }
+
+  @include respond-to('lg') {
+    padding: $spacing-4xl $spacing-2xl;
+  }
+}
+
+// Container
+@mixin container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing-md;
+  padding-right: $spacing-md;
+
+  @include respond-to('sm') {
+    max-width: $container-max-width-sm;
+  }
+
+  @include respond-to('md') {
+    max-width: $container-max-width-md;
+  }
+
+  @include respond-to('lg') {
+    max-width: $container-max-width-lg;
+  }
+
+  @include respond-to('xl') {
+    max-width: $container-max-width-xl;
+  }
+
+  @include respond-to('xxl') {
+    max-width: $container-max-width-xxl;
+  }
+}
+
+// Text Gradient
+@mixin text-gradient($color1, $color2) {
+  background: linear-gradient(135deg, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// Smooth Scroll
+@mixin smooth-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+// Hide Scrollbar
+@mixin hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// Truncate Text
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Line Clamp
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Absolute Center
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Cover Background
+@mixin cover-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

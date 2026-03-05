@@ -1,0 +1,118 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-2xl;
+  margin-top: $spacing-3xl;
+
+  @include respond-to('md') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to('xl') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  @include card;
+  padding: $spacing-2xl;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, $primary-blue, $secondary-blue, $accent-blue);
+  }
+
+  .project-icon {
+    @include flex-center;
+    width: 64px;
+    height: 64px;
+    border-radius: $border-radius-lg;
+    background: linear-gradient(135deg, $primary-blue, $secondary-blue);
+    color: $white;
+    margin-bottom: $spacing-lg;
+
+    .material-icons {
+      font-size: 2rem;
+    }
+  }
+
+  .project-title {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    color: $text-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  .project-description {
+    font-size: $font-size-base;
+    color: $text-secondary;
+    line-height: 1.6;
+    margin-bottom: $spacing-lg;
+  }
+
+  .project-tech {
+    @include flex-center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-lg;
+
+    .tech-badge {
+      padding: $spacing-xs $spacing-md;
+      background: $light-blue;
+      color: $primary-blue;
+      border-radius: $border-radius-full;
+      font-size: $font-size-xs;
+      font-weight: $font-weight-semibold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .project-achievements {
+    h4 {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-semibold;
+      color: $text-primary;
+      margin-bottom: $spacing-md;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        @include flex-center;
+        justify-content: flex-start;
+        gap: $spacing-sm;
+        margin-bottom: $spacing-sm;
+        font-size: $font-size-sm;
+        color: $text-secondary;
+
+        .material-icons {
+          color: $success;
+          font-size: 1rem;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+  }
+}

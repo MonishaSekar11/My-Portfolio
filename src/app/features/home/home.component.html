@@ -1,0 +1,67 @@
+<section id="home" class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <!-- Hero Text -->
+      <div class="hero-text">
+        <p class="hero-greeting fade-in-down">Hi, I'm</p>
+        <h1 class="hero-name fade-in-up">
+          Monisha S
+        </h1>
+        <div class="hero-title-container">
+          <h2 class="hero-title slide-in-left">
+            {{ displayedText }}<span class="cursor">|</span>
+          </h2>
+        </div>
+        <p class="hero-description fade-in-up">
+          Dedicated developer with <strong>3.7+ years</strong> of experience in designing,
+          developing, and maintaining enterprise web applications. Specialized in building
+          modern, scalable solutions using Angular, C#, and .NET Core.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions fade-in-up">
+          <button (click)="scrollToProjects()" class="btn-primary">
+            <span class="material-icons">work</span>
+            View My Work
+          </button>
+          <app-download-resume-btn variant="outline" size="large"></app-download-resume-btn>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="tech-stack scale-in">
+          <p class="tech-stack-label">Tech Stack</p>
+          <div class="tech-icons">
+            <div *ngFor="let tech of techStack" class="tech-item" [title]="tech.name">
+              <span class="material-icons">{{ tech.icon }}</span>
+              <span class="tech-name">{{ tech.name }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Image/Illustration -->
+      <div class="hero-image fade-in">
+        <div class="image-wrapper">
+          <div class="image-circle">
+            <img src="assets/images/profile/profile-photo.jpg" alt="Monisha S - Full Stack Developer" class="profile-photo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <p>Scroll Down</p>
+    </div>
+  </div>
+
+  <!-- Background Decoration -->
+  <div class="hero-background">
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+  </div>
+</section>

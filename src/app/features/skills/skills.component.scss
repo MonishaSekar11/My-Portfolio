@@ -1,0 +1,90 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-xl;
+  margin-top: $spacing-3xl;
+
+  @include respond-to('md') {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-2xl;
+  }
+
+  @include respond-to('lg') {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-2xl;
+  }
+}
+
+.skill-category {
+  @include card;
+  padding: $spacing-2xl;
+  border-top: 4px solid $primary-blue;
+
+  .category-header {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: $spacing-md;
+    margin-bottom: $spacing-xl;
+
+    .category-icon {
+      @include flex-center;
+      width: 48px;
+      height: 48px;
+      border-radius: $border-radius-lg;
+      background: linear-gradient(135deg, $primary-blue, $secondary-blue);
+      color: $white;
+      font-size: 1.5rem;
+    }
+
+    .category-title {
+      font-size: $font-size-xl;
+      font-weight: $font-weight-bold;
+      color: $text-primary;
+      margin: 0;
+    }
+  }
+
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+
+    .skill-item {
+      @include flex-center;
+      justify-content: flex-start;
+      gap: $spacing-sm;
+      padding: $spacing-sm;
+      transition: all $transition-base;
+      border-radius: $border-radius-sm;
+
+      .skill-bullet {
+        width: 8px;
+        height: 8px;
+        border-radius: $border-radius-full;
+        background: linear-gradient(135deg, $primary-blue, $secondary-blue);
+        flex-shrink: 0;
+      }
+
+      .skill-name {
+        font-size: $font-size-base;
+        color: $text-primary;
+        font-weight: $font-weight-medium;
+      }
+
+      &:hover {
+        background: $light-blue;
+        transform: translateX(5px);
+
+        .skill-bullet {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}

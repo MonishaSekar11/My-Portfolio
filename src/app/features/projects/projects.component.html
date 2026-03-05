@@ -1,0 +1,33 @@
+<section id="projects" class="section section-light">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Showcasing my work and achievements</p>
+
+    <div class="projects-grid">
+      <div *ngFor="let project of projects; let i = index" class="project-card">
+        <div class="project-icon">
+          <span class="material-icons">{{ project.icon }}</span>
+        </div>
+        
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+
+        <div class="project-tech">
+          <span *ngFor="let tech of project.technologies" class="tech-badge">
+            {{ tech }}
+          </span>
+        </div>
+
+        <div class="project-achievements">
+          <h4>Key Achievements:</h4>
+          <ul>
+            <li *ngFor="let achievement of project.achievements">
+              <span class="material-icons">check_circle</span>
+              <span>{{ achievement }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,113 @@
+<section id="experience" class="section section-white">
+  <div class="container">
+    <h2 class="section-title">Work Experience & Education</h2>
+    <p class="section-subtitle">My professional journey and academic background</p>
+
+    <div class="experience-grid">
+      <!-- Work Experience Card -->
+      <div class="experience-card">
+        <div class="card-header">
+          <div class="company-icon">
+            <span class="material-icons">business</span>
+          </div>
+          <div class="header-content">
+            <h3 class="position">{{ experience.position }}</h3>
+            <h4 class="company">{{ experience.company }}</h4>
+          </div>
+          <span class="duration-badge">{{ experience.years }}</span>
+        </div>
+
+        <div class="card-meta">
+          <span class="meta-item">
+            <span class="material-icons">location_on</span>
+            {{ experience.location }}
+          </span>
+          <span class="meta-item">
+            <span class="material-icons">calendar_today</span>
+            {{ experience.duration }}
+          </span>
+        </div>
+
+        <div class="card-body">
+          <h5 class="section-label">Key Responsibilities</h5>
+          <div class="responsibilities-grid">
+            <div *ngFor="let responsibility of experience.responsibilities" class="responsibility-item">
+              <span class="material-icons check-icon">check_circle</span>
+              <span>{{ responsibility }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Card -->
+      <div class="education-card-main">
+        <div class="card-header">
+          <div class="education-icon">
+            <span class="material-icons">school</span>
+          </div>
+          <div class="header-content">
+            <h3 class="degree">Bachelor of Engineering</h3>
+            <h4 class="major">Computer Science and Engineering</h4>
+          </div>
+        </div>
+
+        <div class="card-meta">
+          <span class="meta-item">
+            <span class="material-icons">calendar_today</span>
+            2019 - 2023
+          </span>
+          <span class="meta-item">
+            <span class="material-icons">location_on</span>
+            Namakkal, Tamil Nadu, India
+          </span>
+        </div>
+
+        <div class="card-body">
+          <h5 class="section-label">Key Coursework</h5>
+          <div class="highlights-list">
+            <div class="highlight-item">
+              <span class="material-icons">code</span>
+              <span>Data Structures and Algorithms</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">web</span>
+              <span>Web Technologies and Application Development</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">storage</span>
+              <span>Database Management Systems</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">developer_mode</span>
+              <span>Object-Oriented Programming</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">cloud</span>
+              <span>Cloud Computing and Distributed Systems</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">security</span>
+              <span>Software Engineering and Testing</span>
+            </div>
+          </div>
+
+          <h5 class="section-label" style="margin-top: 1.5rem;">Academic Achievements</h5>
+          <div class="highlights-list">
+            <div class="highlight-item">
+              <span class="material-icons">stars</span>
+              <span>Graduated with comprehensive knowledge in full stack development</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">emoji_events</span>
+              <span>Built strong foundation in software engineering principles</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">terminal</span>
+              <span>Completed multiple hands-on projects in web development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

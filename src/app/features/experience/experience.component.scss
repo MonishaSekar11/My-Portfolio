@@ -1,0 +1,197 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-2xl;
+  margin-top: $spacing-3xl;
+
+  @include respond-to('lg') {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-3xl;
+  }
+}
+
+// Common Card Styles
+.experience-card,
+.education-card-main {
+  @include card;
+  padding: $spacing-2xl;
+  border-top: 4px solid $primary-blue;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+
+  .card-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: $spacing-md;
+    align-items: start;
+    padding-bottom: $spacing-md;
+    border-bottom: 2px solid $light-gray;
+
+    .company-icon,
+    .education-icon {
+      @include flex-center;
+      width: 56px;
+      height: 56px;
+      border-radius: $border-radius-lg;
+      background: linear-gradient(135deg, $primary-blue, $secondary-blue);
+      color: $white;
+      flex-shrink: 0;
+
+      .material-icons {
+        font-size: 1.75rem;
+      }
+    }
+
+    .header-content {
+      h3 {
+        font-size: $font-size-xl;
+        font-weight: $font-weight-bold;
+        color: $text-primary;
+        margin-bottom: $spacing-xs;
+        line-height: 1.2;
+      }
+
+      h4 {
+        font-size: $font-size-base;
+        font-weight: $font-weight-semibold;
+        color: $primary-blue;
+        margin: 0;
+      }
+    }
+
+    .duration-badge {
+      padding: $spacing-xs $spacing-md;
+      background: linear-gradient(135deg, $primary-blue, $secondary-blue);
+      color: $white;
+      border-radius: $border-radius-full;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-semibold;
+      white-space: nowrap;
+      align-self: flex-start;
+    }
+  }
+
+  .card-meta {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: $spacing-lg;
+    flex-wrap: wrap;
+
+    .meta-item {
+      @include flex-center;
+      gap: $spacing-xs;
+      font-size: $font-size-sm;
+      color: $text-secondary;
+
+      .material-icons {
+        font-size: 1rem;
+        color: $primary-blue;
+      }
+    }
+  }
+
+  .card-body {
+    .section-label {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-semibold;
+      color: $text-primary;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: $spacing-md;
+    }
+  }
+}
+
+// Experience Card Specific
+.experience-card {
+  .responsibilities-grid {
+    display: grid;
+    gap: $spacing-md;
+
+    .responsibility-item {
+      @include flex-center;
+      justify-content: flex-start;
+      gap: $spacing-sm;
+      padding: $spacing-sm;
+      background: $light-gray;
+      border-radius: $border-radius-md;
+      transition: all $transition-base;
+
+      .check-icon {
+        color: $success;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      span:last-child {
+        font-size: $font-size-sm;
+        color: $text-primary;
+        line-height: 1.5;
+      }
+
+      &:hover {
+        background: $light-blue;
+        transform: translateX(5px);
+      }
+    }
+  }
+}
+
+// Education Card Specific
+.education-card-main {
+  .degree {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    color: $text-primary;
+  }
+
+  .major {
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    color: $primary-blue;
+  }
+
+  .highlights-list {
+    display: grid;
+    gap: $spacing-md;
+
+    .highlight-item {
+      @include flex-center;
+      justify-content: flex-start;
+      gap: $spacing-sm;
+      padding: $spacing-sm;
+      background: $light-gray;
+      border-radius: $border-radius-md;
+      transition: all $transition-base;
+
+      .material-icons {
+        color: $accent-blue;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      span:last-child {
+        font-size: $font-size-sm;
+        color: $text-primary;
+        line-height: 1.5;
+      }
+
+      &:hover {
+        background: $light-blue;
+        transform: translateX(5px);
+      }
+    }
+  }
+}
+
+// Responsive Adjustments
+@include respond-to('lg') {
+  .experience-card,
+  .education-card-main {
+    min-height: 500px;
+  }
+}

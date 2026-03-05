@@ -1,0 +1,8 @@
+<button
+  (click)="downloadResume()"
+  [class]="'btn-download btn-' + variant + ' btn-' + size"
+  aria-label="Download Resume">
+  <span class="material-icons" *ngIf="showIcon && variant !== 'icon'">download</span>
+  <span *ngIf="variant !== 'icon'" class="btn-text">Download Resume</span>
+  <span class="material-icons" *ngIf="variant === 'icon'">download</span>
+</button>

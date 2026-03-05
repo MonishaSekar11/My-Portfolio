@@ -1,0 +1,81 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.btn-download {
+  @include button-base;
+  font-family: $font-primary;
+
+  .material-icons {
+    font-size: 1.25rem;
+  }
+
+  .btn-text {
+    white-space: nowrap;
+  }
+}
+
+// Variants
+.btn-primary {
+  @include button-primary;
+}
+
+.btn-outline {
+  @include button-outline;
+}
+
+.btn-icon {
+  padding: $spacing-sm;
+  border-radius: $border-radius-full;
+  background-color: $primary-blue;
+  color: $white;
+  border: none;
+  width: 48px;
+  height: 48px;
+
+  .material-icons {
+    font-size: 1.5rem;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: $hover-blue;
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: $shadow-sm;
+  }
+}
+
+// Sizes
+.btn-small {
+  padding: $spacing-xs $spacing-md;
+  font-size: $font-size-sm;
+
+  .material-icons {
+    font-size: 1rem;
+  }
+}
+
+.btn-medium {
+  padding: $spacing-sm $spacing-lg;
+  font-size: $font-size-base;
+}
+
+.btn-large {
+  padding: $spacing-md $spacing-xl;
+  font-size: $font-size-lg;
+
+  .material-icons {
+    font-size: 1.5rem;
+  }
+}
+
+// Responsive
+@include respond-to('md') {
+  .btn-icon {
+    width: 56px;
+    height: 56px;
+  }
+}

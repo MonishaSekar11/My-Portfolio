@@ -1,0 +1,222 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-3xl;
+  margin-top: $spacing-3xl;
+
+  @include respond-to('lg') {
+    grid-template-columns: 1.5fr 1fr;
+    gap: $spacing-4xl;
+  }
+}
+
+.contact-info {
+  h3 {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $text-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  .contact-intro {
+    font-size: $font-size-base;
+    color: $text-secondary;
+    line-height: 1.6;
+    margin-bottom: $spacing-2xl;
+  }
+
+  .info-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+    margin-bottom: $spacing-2xl;
+
+    .info-card {
+      @include flex-center;
+      justify-content: flex-start;
+      gap: $spacing-md;
+      padding: $spacing-lg;
+      background: $white;
+      border-radius: $border-radius-lg;
+      box-shadow: $shadow-sm;
+      transition: all $transition-base;
+
+      .info-icon {
+        @include flex-center;
+        width: 56px;
+        height: 56px;
+        border-radius: $border-radius-lg;
+        background: linear-gradient(135deg, $primary-blue, $secondary-blue);
+        color: $white;
+        flex-shrink: 0;
+
+        .material-icons {
+          font-size: 1.75rem;
+        }
+      }
+
+      .info-details {
+        h4 {
+          font-size: $font-size-sm;
+          font-weight: $font-weight-semibold;
+          color: $text-secondary;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: $spacing-xs;
+        }
+
+        .info-value {
+          font-size: $font-size-lg;
+          font-weight: $font-weight-medium;
+          color: $text-primary;
+          margin: 0;
+
+          &[href] {
+            color: $primary-blue;
+            text-decoration: none;
+            transition: color $transition-base;
+
+            &:hover {
+              color: $hover-blue;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-md;
+      }
+    }
+  }
+
+  .social-section {
+    padding: $spacing-xl 0;
+    border-top: 2px solid $light-gray;
+    border-bottom: 2px solid $light-gray;
+    margin-bottom: $spacing-2xl;
+
+    h4 {
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      color: $text-primary;
+      margin-bottom: $spacing-md;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .social-links {
+      @include flex-center;
+      justify-content: flex-start;
+      gap: $spacing-md;
+      flex-wrap: wrap;
+
+      .social-link {
+        @include flex-center;
+        gap: $spacing-xs;
+        padding: $spacing-sm $spacing-lg;
+        background: $white;
+        border-radius: $border-radius-md;
+        box-shadow: $shadow-sm;
+        text-decoration: none;
+        color: $text-primary;
+        transition: all $transition-base;
+
+        .material-icons {
+          color: $primary-blue;
+          font-size: 1.25rem;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: $primary-blue;
+        }
+
+        span:last-child {
+          font-weight: $font-weight-medium;
+        }
+
+        &:hover {
+          background: $primary-blue;
+          color: $white;
+          transform: translateY(-2px);
+          box-shadow: $shadow-md;
+          text-decoration: none;
+
+          .material-icons,
+          svg {
+            color: $white;
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .resume-download {
+    h4 {
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      color: $text-primary;
+      margin-bottom: $spacing-sm;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      color: $text-secondary;
+      margin-bottom: $spacing-md;
+    }
+  }
+}
+
+.contact-card {
+  @include card;
+  padding: $spacing-3xl;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  .card-decoration {
+    @include flex-center;
+    width: 80px;
+    height: 80px;
+    border-radius: $border-radius-full;
+    background: linear-gradient(135deg, $primary-blue, $secondary-blue);
+    color: $white;
+    margin: 0 auto $spacing-xl;
+
+    .material-icons {
+      font-size: 2.5rem;
+    }
+  }
+
+  h3 {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $text-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    font-size: $font-size-base;
+    color: $text-secondary;
+    line-height: 1.6;
+    margin-bottom: $spacing-xl;
+  }
+
+  .cta-buttons {
+    @include flex-column;
+    gap: $spacing-md;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
