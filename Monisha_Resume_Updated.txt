@@ -1,0 +1,166 @@
+================================================================================
+                              MONISHA S
+                      Full Stack Web Developer
+================================================================================
+
+CONTACT INFORMATION
+--------------------------------------------------------------------------------
+Location:    Bangalore, India
+Phone:       +91 6374076035
+Email:       monikrish1114@gmail.com
+LinkedIn:    linkedin.com/in/monisha-sekar00a49022a
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+
+Dedicated Full Stack Web Developer with 3.7+ years of hands-on experience in
+designing, developing, testing, and maintaining enterprise web applications.
+Proficient in Angular, C#, .NET Core, and SQL Server with a strong
+understanding of the complete software development lifecycle. Proven track
+record of delivering innovative solutions in an Agile environment while
+mentoring team members and optimizing application performance.
+
+================================================================================
+TECHNICAL SKILLS
+================================================================================
+
+Frontend Development:
+  • Angular (17+), TypeScript, HTML5, CSS3, SCSS
+  • Angular Material, Bootstrap 5, Form.io
+  • Responsive Design, Single Page Applications
+
+Backend Development:
+  • C#, .NET Core, ASP.NET Web API
+  • RESTful APIs, Microservices Architecture
+  • Azure Cloud Services
+
+Database:
+  • SQL Server, T-SQL
+  • Stored Procedures, Functions, Triggers, Views
+  • Database Optimization, Query Performance Tuning
+
+Testing & Quality Assurance:
+  • NUnit, Unit Testing, End-to-End Testing, UAT
+
+Tools & Technologies:
+  • Visual Studio 2022, VS Code
+  • Git, GitHub, Postman
+  • Azure DevOps, JIRA, Confluence
+  • Kubernetes, Docker (Basic)
+  • Agile, Kanban, Scrum
+
+================================================================================
+PROFESSIONAL EXPERIENCE
+================================================================================
+
+SOFTWARE ENGINEER
+Brandmuscle India Pvt Ltd | Bangalore, India
+August 2022 - Present (3.7 years)
+
+--------------------------------------------------------------------------------
+Project: Digital Business Card
+Technologies: Angular, C#, SQL Server, Form.io, HTML & CSS
+
+Key Responsibilities & Achievements:
+  • Developed a comprehensive digital business card system that generates QR
+    codes using user information (mobile number, name, profile photo, email)
+
+  • Designed an intuitive interface enabling non-technical users to create and
+    share contact details digitally, replacing traditional visiting cards
+
+  • Implemented mobile-responsive design using Angular and Form.io, ensuring
+    seamless experience across all devices
+
+  • Architected database objects including stored procedures, functions,
+    triggers, and views in SQL Server
+
+  • Created optimized SQL queries for integration with external applications
+
+  • Prepared and executed data fix scripts and managed deployment deliverables
+
+  • Conducted UAT demonstrations and prepared comprehensive test cases
+
+  • Mentored junior colleagues on application workflow and best practices
+
+  • Managed end-to-end testing and production deployments
+
+Impact: Delivered an eco-friendly, modern solution for business professionals
+
+--------------------------------------------------------------------------------
+Project: Rush Order Management
+Technologies: C#, Angular, Angular Material
+
+Key Responsibilities & Achievements:
+  • Redesigned traditional lead time system to support flexible order
+    scheduling based on customer requirements
+
+  • Developed user stories from business requirements using Agile methodology
+
+  • Implemented dynamic date picker using Angular Material, enabling customers
+    to select preferred delivery dates instead of fixed timelines
+
+  • Improved order management efficiency by 30% through better alignment of
+    delivery planning with customer needs
+
+  • Enhanced platform usability by providing greater control to end users
+
+Impact: Transformed rigid scheduling into flexible, customer-centric solution
+
+--------------------------------------------------------------------------------
+Project: POP (Point of Purchase) Process
+Technologies: Angular, .NET Core, Azure, SQL Server
+
+Key Responsibilities & Achievements:
+  • Facilitated complete POP process offering full customization of printed
+    marketing materials tailored to customer specifications
+
+  • Developed REST APIs to bridge communication between clients and print
+    vendors
+
+  • Enabled clients to define product attributes (dimensions, layout, colors,
+    messaging) through intuitive Angular interface
+
+  • Implemented Azure-based notification system for automated email alerts
+
+  • Ensured design flexibility, empowering customers with full control over
+    final output
+
+  • Optimized database queries for improved application performance
+
+Impact: Streamlined customization process, reducing production errors
+
+================================================================================
+EDUCATION
+================================================================================
+
+Bachelor of Engineering in Computer Science and Engineering
+2019 - 2023
+Namakkal, Tamil Nadu, India
+
+================================================================================
+KEY COMPETENCIES
+================================================================================
+
+  • Full Stack Web Development
+  • RESTful API Design & Development
+  • Database Design & Optimization
+  • Agile/Scrum Methodologies
+  • Problem Solving & Debugging
+  • Code Review & Mentoring
+  • Cross-functional Collaboration
+  • Client Communication & UAT
+  • Performance Optimization
+  • Cloud Deployment (Azure)
+
+================================================================================
+DECLARATION
+================================================================================
+
+I hereby declare that all the details furnished above are true to the best of
+my knowledge.
+
+Date: March 2026
+Place: Bangalore
+
+================================================================================

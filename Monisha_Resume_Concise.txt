@@ -1,0 +1,84 @@
+================================================================================
+                              MONISHA S
+              Full Stack Web Developer | 3.7+ Years Experience
+================================================================================
+
+Bangalore, India | +91 6374076035 | monikrish1114@gmail.com
+LinkedIn: linkedin.com/in/monisha-sekar00a49022a
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+
+Full Stack Web Developer with 3.7+ years of experience specializing in Angular,
+C#, .NET Core, and SQL Server. Proven expertise in delivering enterprise web
+applications, REST APIs, and cloud solutions. Strong background in Agile
+methodologies, database optimization, and team mentorship.
+
+================================================================================
+TECHNICAL SKILLS
+================================================================================
+
+Frontend:  Angular 17+, TypeScript, HTML5, CSS3, SCSS, Angular Material,
+           Bootstrap, Form.io, Responsive Design
+
+Backend:   C#, .NET Core, ASP.NET Web API, RESTful APIs, Azure
+
+Database:  SQL Server, T-SQL, Stored Procedures, Query Optimization
+
+Tools:     Visual Studio, VS Code, Git, Postman, JIRA, Azure DevOps,
+           Kubernetes, NUnit
+
+================================================================================
+PROFESSIONAL EXPERIENCE
+================================================================================
+
+SOFTWARE ENGINEER | Brandmuscle India Pvt Ltd, Bangalore
+August 2022 - Present (3.7 years)
+
+Digital Business Card | Angular, C#, SQL Server, Form.io
+  • Developed QR code-based digital business card system for seamless contact
+    sharing
+  • Built mobile-responsive interface enabling non-technical users to create
+    digital visiting cards
+  • Designed database architecture with stored procedures, functions, and
+    triggers
+  • Led UAT demonstrations and mentored junior developers
+
+Rush Order Management | C#, Angular, Angular Material
+  • Redesigned traditional lead time system to support flexible customer-driven
+    scheduling
+  • Implemented dynamic date picker replacing fixed delivery timelines
+  • Improved order management efficiency by 30%
+  • Enhanced user satisfaction through customer-centric design
+
+POP Process | Angular, .NET Core, Azure, SQL Server
+  • Built customization platform for printed marketing materials
+  • Developed REST APIs bridging clients and print vendors
+  • Implemented Azure-based automated notification system
+  • Optimized database queries for improved performance
+
+Key Contributions:
+  • End-to-end application development from requirements to deployment
+  • Database design, optimization, and data migration
+  • Code reviews, mentoring, and knowledge sharing
+  • Cross-functional collaboration with stakeholders
+
+================================================================================
+EDUCATION
+================================================================================
+
+Bachelor of Engineering - Computer Science and Engineering
+2019 - 2023 | Namakkal, Tamil Nadu
+
+================================================================================
+KEY ACHIEVEMENTS
+================================================================================
+
+  ✓ Successfully delivered 3 major enterprise projects in Agile environment
+  ✓ Improved order management efficiency by 30% through innovative redesign
+  ✓ Mentored team members on application architecture and best practices
+  ✓ Optimized database queries reducing response time significantly
+  ✓ Managed production deployments with zero downtime
+
+================================================================================

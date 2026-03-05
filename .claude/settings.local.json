@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ng version:*)",
+      "Bash(npm:*)",
+      "Bash(ng new:*)",
+      "Bash(mkdir:*)",
+      "Bash(ng generate:*)",
+      "Bash(/c/personal_info/portfolio/src/app/features/about/about.component.html:*)",
+      "Bash(/c/personal_info/portfolio/src/app/features/skills/skills.component.html:*)",
+      "Bash(/c/personal_info/portfolio/src/app/features/projects/projects.component.html:*)",
+      "Bash(/c/personal_info/portfolio/src/app/features/experience/experience.component.html:*)",
+      "Bash(/c/personal_info/portfolio/src/app/features/contact/contact.component.html:*)",
+      "Bash(/c/personal_info/portfolio/src/app/app.component.html:*)",
+      "Bash(/c/personal_info/PORTFOLIO_SUMMARY.md:*)"
+    ]
+  }
+}
